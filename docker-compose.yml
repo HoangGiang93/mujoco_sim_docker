@@ -26,50 +26,56 @@ services:
     entrypoint: /entrypoint.bash
     command: roscore
 
-  # mujoco-ws:
-  #   tty: true
-  #   image: mujoco-ws:${ROS_DISTRO}
-  #   build:
-  #     context: ./images/mujoco-ws-image/
-  #     dockerfile: Dockerfile
-  #     args:
-  #       ROS_DISTRO: ${ROS_DISTRO}
-  #   container_name: mujoco-ws-container
-  #   networks:
-  #     ros-network:
-  #       ipv4_address: ${ROS_IP_MUJOCO_WS}
-  #   environment:
-  #     - ROS_MASTER_URI=http://ros-core:11311
-  #     - ROS_IP=${ROS_IP_MUJOCO_WS}
-  #   volumes:
-  #     - type: bind
-  #       source: ./images/mujoco-ws-image/src
-  #       target: /home/mujoco_ws/src
-  #   entrypoint: /entrypoint.bash
-  #   command: sh -c "sleep 1 && roslaunch franka_mujoco panda_arm_display_headless.launch"
-  #   depends_on:
-  #     - ros-core
-
-  rviz:
-    # visible output of local simulation as rviz view.
+  mujoco-ws:
     tty: true
-    image: rviz-ws:${ROS_DISTRO}
+    image: mujoco-ws:${ROS_DISTRO}
     build:
       context: ./images/mujoco-ws-image/
       dockerfile: Dockerfile
       args:
-        ROS_DISTRO: melodic
+        ROS_DISTRO: ${ROS_DISTRO}
+    container_name: mujoco-ws-container
+    networks:
+      ros-network:
+        ipv4_address: ${ROS_IP_MUJOCO_WS}
+    environment:
+      - ROS_MASTER_URI=http://ros-core:11311
+      - ROS_IP=${ROS_IP_MUJOCO_WS}
+    volumes:
+      - type: bind
+        source: ./images/mujoco-ws-image/src
+        target: /home/mujoco_ws/src
+    entrypoint: /entrypoint.bash
+    command: sh -c "sleep 1 && roslaunch zoo_mujoco zoo_display_headless.launch"
+    depends_on:
+      - ros-core
+
+  rviz:
+    # visible output of local simulation as rviz view.
+    tty: true
+    image: rviz:${ROS_DISTRO}
+    build:
+      context: ./images/rviz-image/
+      dockerfile: Dockerfile
+      args:
+        ROS_DISTRO: ${ROS_DISTRO}
     container_name: rviz-container
-    networks: 
+    networks:
       ros-network:
         ipv4_address: ${ROS_IP_RVIZ}
-    environment: 
-      - "ROS_MASTER_URI=http://ros-core:11311"
-      - "DISPLAY"
-      - "QT_X11_NO_MITSHM=1" #fix some QT bugs
+    environment:
+      - ROS_MASTER_URI=http://ros-core:11311
+      - DISPLAY
+      - QT_X11_NO_MITSHM=1 #fix some QT bugs
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix:rw
       - ./rviz-config:/rviz-config:z
     entrypoint: /entrypoint.bash
-    command: rviz
-    # command: sh -c "sleep 1"
+    command:
+      [
+        "rosrun",
+        "rviz",
+        "rviz",
+        "--display-config",
+        "/rviz-config/rviz.rviz"
+      ]
