@@ -46,7 +46,7 @@ services:
         source: ./images/mujoco-ws-image/src
         target: /home/mujoco_ws/src
     entrypoint: /entrypoint.bash
-    command: sh -c "sleep 1 && roslaunch zoo_mujoco zoo_display_headless.launch"
+    command: sh -c "sleep 1 && roslaunch zoo_mujoco zoo_bringup.launch"
     depends_on:
       - ros-core
 

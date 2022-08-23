@@ -8,6 +8,10 @@ WORKDIR /home/mujoco_ws
 RUN apt-get update && apt-get install -y \
   apt-utils \
   ros-${ROS_DISTRO}-gripper-action-controller \
+  ros-${ROS_DISTRO}-rosbridge-suite \
+  ros-${ROS_DISTRO}-move-base \
+  ros-${ROS_DISTRO}-map-server \
+  ros-${ROS_DISTRO}-dwa-local-planner \
   python3-pip \
   python3-dev \
   python3-catkin-tools \
