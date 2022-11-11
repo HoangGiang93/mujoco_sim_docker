@@ -17,6 +17,7 @@ cd mujoco_sim_docker
 ### 3. Follow these steps to build docker images:
 #### 3.1. Clone the packages with wstool
 ```
+sudo apt install ros-${ROS_DISTRO}-mk # This step is to make sure the mk from rospack is there
 ./setup_ros_packages.bash
 ```
 #### 3.2. Install nvidia-docker2 to enable GPU access with Compose (sudo required)
@@ -25,7 +26,7 @@ cd mujoco_sim_docker
 ```
 #### 3.3. Build the docker images
 ```
-source .env # this step is to make sure the ROS_DISTRO is noetic
+source .env # This step is to make sure the ROS_DISTRO is noetic
 docker-compose build
 ```
 ### 4. Using the docker images
