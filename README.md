@@ -25,6 +25,7 @@ cd mujoco_sim_docker
 ```
 #### 3.3. Build the docker images
 ```
+source .env # this step is to make sure the ROS_DISTRO is noetic
 docker-compose build
 ```
 ### 4. Using the docker images
