@@ -9,10 +9,10 @@ docker-compose version 1.29.2, build 5becea4c
 docker-py version: 5.0.0
 ```
 
-### 1. If you want to use a package simulator from Unreal Engine, download it at https://seafile.zfn.uni-bremen.de/f/aa015a071cb7498695a7/ and unzip it
+### 1. If you want to use a package simulator from Unreal Engine, download it at https://seafile.zfn.uni-bremen.de/f/a8ac0f55af3c4620bc56/ and unzip it
 ### 2. Clone this repository and go into docker folder
 ```
-cd docker
+cd mujoco_sim_docker
 ```
 ### 3. Follow these steps to build docker images:
 #### 3.1. Clone the packages with wstool
