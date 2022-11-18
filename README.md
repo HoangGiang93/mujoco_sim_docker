@@ -4,13 +4,17 @@ This repository contains docker images for deploying ROS packages for MuJoCo wit
 
 ### 0. Prerequisites: https://docs.docker.com/compose/install
 No ROS required, No Unreal Engine required, just a PC with a good NVIDIA Graphic Card :)
-```
+
+Check your docker-compose and docker-py versions:
+```bash
+$ docker-compose -v
 docker-compose version 1.29.2, build 5becea4c
-docker-py version: 5.0.0
+$ pip3 freeze | grep docker
+docker==5.0.0
 ```
 
 ### 1. If you want to use a package simulator from Unreal Engine, download it at https://seafile.zfn.uni-bremen.de/f/a8ac0f55af3c4620bc56/ and unzip it
-### 2. Clone this repository and go into docker folder
+### 2. Clone this repository and go into the checked out folder:
 ```
 cd mujoco_sim_docker
 ```
