@@ -1,6 +1,6 @@
 # mujoco_sim_docker
 
-This repository contains docker images for deploying ROS packages for MuJoCo with https://github.com/K4R-IAI/K4R_Development
+This repository contains docker images for deploying ROS packages for MuJoCo with https://github.com/code-iai/UnrealApartment/tree/AddHSR
 
 ### 0. Prerequisites: https://docs.docker.com/compose/install
 No ROS required, No Unreal Engine required, just a PC with a good NVIDIA Graphic Card :)
@@ -40,7 +40,7 @@ docker-compose up mujoco-ws
 ```
 #### 4.2. Start the simulation (either by clicking Play in Unreal Engine or from the unziped package)
 ```
-sh Waterfront.sh
+sh Laborraum.sh
 ```
 #### 4.3. You can visualize everything with rviz from docker container
 ```
@@ -48,7 +48,8 @@ sh Waterfront.sh
 ```
 The result should look like this:
 
-![Result](https://user-images.githubusercontent.com/64316740/186185620-31dcf285-ba90-4476-a28f-24734854b2fc.png)
+![Result](https://user-images.githubusercontent.com/64316740/207082423-ae6843c2-8145-42b9-8d8b-09b71b94137f.png)
+
 ### 5. Stop docker containers 
 #### 5.1. Cancel every terminals with Ctrl + C
 #### 5.2. Remove docker containers and network
