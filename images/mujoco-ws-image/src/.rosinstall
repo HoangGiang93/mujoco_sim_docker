@@ -11,3 +11,6 @@
 - git:
     local-name: mujoco_world
     uri: git@github.com:HoangGiang93/mujoco_world.git
+- git:
+    local-name: unreal_vision_bridge
+    uri: git@github.com:code-iai/unreal_vision_bridge.git
