@@ -13,7 +13,7 @@ $ pip3 freeze | grep docker
 docker==5.0.0
 ```
 
-### 1. If you want to use a package simulator from Unreal Engine, download it [here](https://seafile.zfn.uni-bremen.de/f/6949f68d40074b09b6fd/) and unzip it
+### 1. If you want to use a package simulator from Unreal Engine, download it [here](https://seafile.zfn.uni-bremen.de/f/f3ac2b1fe0c14c66bed1/) and unzip it
 ### 2. Clone this repository and go into the checked out folder:
 ```
 cd mujoco_sim_docker
