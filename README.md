@@ -48,7 +48,7 @@ sh Laborraum.sh
 ```
 The result should look like this:
 
-![Result](https://user-images.githubusercontent.com/64316740/207082423-ae6843c2-8145-42b9-8d8b-09b71b94137f.png)
+![Result](https://user-images.githubusercontent.com/64316740/212378435-571a6761-cd42-402c-a071-4336f2c44d78.png)
 
 ### 5. Connect to docker container via ROS
 ```
