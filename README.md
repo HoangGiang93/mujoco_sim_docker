@@ -49,9 +49,16 @@ sh Waterfront.sh
 The result should look like this:
 
 ![Result](https://user-images.githubusercontent.com/64316740/212377604-863c5eb3-91c7-4f4b-92e2-cd9fa08ddc43.png)
-### 5. Stop docker containers 
-#### 5.1. Cancel every terminals with Ctrl + C
-#### 5.2. Remove docker containers and network
+
+### 5. Connect to docker container via ROS
+```
+export ROS_MASTER_URI=http://192.168.75.2:11311
+export ROS_IP=$(hostname -I | awk '{print $1}') #your IP
+```
+
+### 6. Stop docker containers 
+#### 6.1. Cancel every terminals with Ctrl + C
+#### 6.2. Remove docker containers and network
 ```
 docker-compose down
 ```
