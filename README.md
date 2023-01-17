@@ -48,7 +48,7 @@ sh Waterfront.sh
 ```
 The result should look like this:
 
-![Result](https://user-images.githubusercontent.com/64316740/212377604-863c5eb3-91c7-4f4b-92e2-cd9fa08ddc43.png)
+![Result](https://user-images.githubusercontent.com/64316740/186185620-31dcf285-ba90-4476-a28f-24734854b2fc.png)
 
 ### 5. Connect to docker container via ROS
 ```
