@@ -80,3 +80,5 @@ services:
         "--display-config",
         "/rviz-config/rviz.rviz"
       ]
+    depends_on:
+      - mujoco-ws
