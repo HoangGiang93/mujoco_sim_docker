@@ -1,10 +1,7 @@
 ARG ROS_DISTRO
-FROM ros:${ROS_DISTRO}-robot
-
-COPY src /home/mujoco_ws/src
+FROM ros-core:${ROS_DISTRO}
 
 # Install prerequisites
-WORKDIR /home/mujoco_ws
 RUN apt-get update && apt-get install -y \
   apt-utils \
   ros-${ROS_DISTRO}-gripper-action-controller \
@@ -18,10 +15,14 @@ RUN apt-get update && apt-get install -y \
   libglfw3 \
   libglfw3-dev \
   doxygen
-RUN rosdep install --from-paths src --ignore-src -r -y \
-  && rm -rf /var/lib/apt/lists/*
+
+# Copy pacakges
+COPY src /home/mujoco_ws/src
+WORKDIR /home/mujoco_ws
 
 # Build catkin workspace
+RUN rosdep install --from-paths src --ignore-src -r -y \
+  && rm -rf /var/lib/apt/lists/*
 RUN . /opt/ros/${ROS_DISTRO}/setup.sh && catkin build
 
 # Create entrypoint
