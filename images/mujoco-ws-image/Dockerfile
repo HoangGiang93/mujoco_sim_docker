@@ -7,6 +7,7 @@ RUN apt-get update && apt-get install -y \
   ros-${ROS_DISTRO}-gripper-action-controller \
   ros-${ROS_DISTRO}-rosbridge-suite \
   ros-${ROS_DISTRO}-move-base \
+  ros-${ROS_DISTRO}-amcl \
   ros-${ROS_DISTRO}-map-server \
   ros-${ROS_DISTRO}-dwa-local-planner \
   python3-pip \
