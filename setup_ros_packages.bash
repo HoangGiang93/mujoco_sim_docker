@@ -1,10 +1,11 @@
 #!/bin/bash
-cd images/mujoco-ws-image/src
-wstool update
-cd mujoco_sim
+CURRENT_DIR=${PWD}
+cd ${CURRENT_DIR}/images/mujoco-ws-image/src
+wstool update 
+cd ${CURRENT_DIR}/images/mujoco-ws-image/src/mujoco_sim
 make
 
-cd images/giskard-ws-image/src
+cd ${CURRENT_DIR}/images/giskard-ws-image/src
 wstool update
-cd ../
+cd ${CURRENT_DIR}/images/giskard-ws-image
 make
