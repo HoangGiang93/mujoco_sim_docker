@@ -34,9 +34,9 @@ source .env # This step is to make sure the ROS_DISTRO is noetic
 docker-compose build
 ```
 ### 4. Using the docker images
-#### 4.1. Start ros-core and mujoco-ws
+#### 4.1. Start ros-core-servce and mujoco-ws-service
 ```
-docker-compose up mujoco-ws
+docker-compose up mujoco-ws-service
 ```
 #### 4.2. Start the simulation (either by clicking Play in Unreal Engine or from the unziped package)
 ```
