@@ -74,7 +74,7 @@ services:
     entrypoint: /entrypoint.bash
     command: sh -c "sleep 1 && roslaunch giskardpy giskardpy_tiago_unreal.launch"
     depends_on:
-      - ros-core-service
+      - mujoco-ws-service
 
   rviz-service:
     # visible output of local simulation as rviz view.
