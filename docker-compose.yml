@@ -8,7 +8,7 @@ networks:
         - subnet: ${SUBNET}
 
 services:
-  ros-core:
+  ros-core-service:
     tty: true
     image: ros-core:${ROS_DISTRO}
     build:
@@ -17,6 +17,7 @@ services:
       args:
         ROS_DISTRO: ${ROS_DISTRO}
     container_name: ros-core-container
+    hostname: ros-core
     networks:
       ros-network:
         ipv4_address: ${ROS_IP_CORE}
@@ -26,7 +27,7 @@ services:
     entrypoint: /entrypoint.bash
     command: roscore
 
-  mujoco-ws:
+  mujoco-ws-service:
     tty: true
     image: mujoco-ws:${ROS_DISTRO}
     build:
@@ -35,6 +36,7 @@ services:
       args:
         ROS_DISTRO: ${ROS_DISTRO}
     container_name: mujoco-ws-container
+    hostname: mujoco-ws
     networks:
       ros-network:
         ipv4_address: ${ROS_IP_MUJOCO_WS}
@@ -43,15 +45,38 @@ services:
       - ROS_MASTER_URI=http://ros-core:11311
       - ROS_IP=${ROS_IP_MUJOCO_WS}
     volumes:
-      - type: bind
-        source: ./images/mujoco-ws-image/src
-        target: /home/mujoco_ws/src
+      - ./images/mujoco-ws-image/src:/home/mujoco_ws/src:rw
     entrypoint: /entrypoint.bash
     command: sh -c "sleep 1 && roslaunch tiago_mujoco tiago_bringup.launch"
     depends_on:
-      - ros-core
+      - ros-core-service
 
-  rviz:
+  giskard-ws-service:
+    tty: true
+    image: giskard-ws:${ROS_DISTRO}
+    build:
+      context: ./images/giskard-ws-image/
+      dockerfile: Dockerfile
+      args:
+        ROS_DISTRO: ${ROS_DISTRO}
+    container_name: giskard-container
+    hostname: giskard-ws
+    networks:
+      ros-network:
+        ipv4_address: ${ROS_IP_GISKARD_WS}
+    environment:
+      - HOST_IP=${HOST_IP}
+      - ROS_MASTER_URI=http://ros-core:11311
+      - ROS_IP=${ROS_IP_GISKARD_WS}
+    volumes:
+      - ./images/giskard-ws-image/src:/home/giskard_ws/src:rw
+      - ./images/giskard-ws-image/gurobi.lic:/opt/gurobi/gurobi.lic:ro
+    entrypoint: /entrypoint.bash
+    command: sh -c "sleep 1 && roslaunch giskardpy giskardpy_tiago_unreal.launch"
+    depends_on:
+      - ros-core-service
+
+  rviz-service:
     # visible output of local simulation as rviz view.
     tty: true
     image: rviz:${ROS_DISTRO}
@@ -61,6 +86,7 @@ services:
       args:
         ROS_DISTRO: ${ROS_DISTRO}
     container_name: rviz-container
+    hostname: rviz
     networks:
       ros-network:
         ipv4_address: ${ROS_IP_RVIZ}
@@ -81,4 +107,4 @@ services:
         "/rviz-config/rviz.rviz"
       ]
     depends_on:
-      - mujoco-ws
+      - mujoco-ws-service

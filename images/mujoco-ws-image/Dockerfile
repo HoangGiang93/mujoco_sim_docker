@@ -1,9 +1,11 @@
 ARG ROS_DISTRO
 FROM ros-core:${ROS_DISTRO}
 
-# Install prerequisites
+# Zero interaction while installing or upgrading the system via apt, see https://bobcares.com/blog/debian_frontendnoninteractive-docker/
+ARG DEBIAN_FRONTEND=noninteractive 
+
+# Install prerequisites 
 RUN apt-get update && apt-get install -y \
-  apt-utils \
   ros-${ROS_DISTRO}-gripper-action-controller \
   ros-${ROS_DISTRO}-rosbridge-suite \
   ros-${ROS_DISTRO}-move-base \
