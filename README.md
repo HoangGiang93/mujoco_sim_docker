@@ -2,7 +2,7 @@
 
 This repository contains docker images for deploying ROS packages for MuJoCo with https://github.com/code-iai/UnrealApartment/tree/AddHSR
 
-### 0. Prerequisites: https://docs.docker.com/compose/install
+### 0. Prerequisites: https://docs.docker.com/desktop/install/ubuntu/
 
 No ROS required, No Unreal Engine required, just a PC with a good NVIDIA Graphic Card :)
 
@@ -38,7 +38,17 @@ sudo apt install ros-${ROS_DISTRO}-mk # This step is to make sure the mk from ro
 ./setup_rviz.bash
 ```
 
-#### 3.3. Build the docker images
+#### 3.3. Apply for a free academic license for Gurobi, see [Gurobi Academic Web License Service](https://www.gurobi.com/features/academic-wls-license/) for more information
+
+##### 1) [Register for a free Gurobi account as an academic and log in.](https://pages.gurobi.com/registration)
+
+##### 2) [Visit the Gurobi User Portal](https://portal.gurobi.com/iam/licenses/request?type=academic)
+
+##### 3) Request your Academic WLS License.
+
+**Note:** Your computer must be connected to a recognized academic institution network when the request is made. Your WLS license will be valid for 90 days and is renewable for as long as you maintain eligibility.
+
+#### 3.4. Build the docker images
 
 ```
 source .env # This step is to make sure the ROS_DISTRO is noetic
@@ -47,7 +57,7 @@ docker compose build
 
 ### 4. Using the docker images
 
-#### 4.1. Start ros-core-servce and mujoco-ws-service
+#### 4.1. Start `ros-core-servce` and `mujoco-ws-service`
 
 ```
 docker compose up mujoco-ws-service
