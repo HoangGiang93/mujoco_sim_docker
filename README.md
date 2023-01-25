@@ -44,7 +44,9 @@ sudo apt install ros-${ROS_DISTRO}-mk # This step is to make sure the mk from ro
 
 ##### 2) [Visit the Gurobi User Portal](https://portal.gurobi.com/iam/licenses/request?type=academic)
 
-##### 3) Request your Academic WLS License.
+##### 3) Request and download your Academic WLS License
+
+##### 4) Move your licencse `gurobi.lic` in `images/giskard-ws-image` folder
 
 **Note:** Your computer must be connected to a recognized academic institution network when the request is made. Your WLS license will be valid for 90 days and is renewable for as long as you maintain eligibility.
 
