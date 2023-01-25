@@ -28,7 +28,8 @@ cd mujoco_sim_docker
 #### 3.1. Clone the packages with wstool
 
 ```
-sudo apt install ros-${ROS_DISTRO}-mk # This step is to make sure the mk from rospack is there
+sudo apt install ros-${ROS_DISTRO}-mk # Install mk from rospack
+sudo apt install python3-wstool        # Install wstool
 ./setup_ros_packages.bash
 ```
 
