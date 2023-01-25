@@ -1,15 +1,15 @@
 ARG ROS_DISTRO
-FROM ros:${ROS_DISTRO}-robot
+FROM ros-core:${ROS_DISTRO}
 
-COPY src /home/mujoco_ws/src
+# Zero interaction while installing or upgrading the system via apt, see https://bobcares.com/blog/debian_frontendnoninteractive-docker/
+ARG DEBIAN_FRONTEND=noninteractive 
 
-# Install prerequisites
-WORKDIR /home/mujoco_ws
+# Install prerequisites 
 RUN apt-get update && apt-get install -y \
-  apt-utils \
   ros-${ROS_DISTRO}-gripper-action-controller \
   ros-${ROS_DISTRO}-rosbridge-suite \
   ros-${ROS_DISTRO}-move-base \
+  ros-${ROS_DISTRO}-amcl \
   ros-${ROS_DISTRO}-map-server \
   ros-${ROS_DISTRO}-dwa-local-planner \
   python3-pip \
@@ -18,10 +18,14 @@ RUN apt-get update && apt-get install -y \
   libglfw3 \
   libglfw3-dev \
   doxygen
-RUN rosdep install --from-paths src --ignore-src -r -y \
-  && rm -rf /var/lib/apt/lists/*
+
+# Copy pacakges
+COPY src /home/mujoco_ws/src
+WORKDIR /home/mujoco_ws
 
 # Build catkin workspace
+RUN rosdep install --from-paths src --ignore-src -r -y \
+  && rm -rf /var/lib/apt/lists/*
 RUN . /opt/ros/${ROS_DISTRO}/setup.sh && catkin build
 
 # Create entrypoint

@@ -1,6 +1,6 @@
 #!/bin/bash
 xhost +local:root
-docker-compose up rviz
+docker compose up rviz-service
 
-# cleanup after rviz has been closed
+# cleanup after rviz-service has been closed
 xhost -local:root
