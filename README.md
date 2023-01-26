@@ -1,6 +1,6 @@
 # mujoco_sim_docker
 
-This repository contains docker images for deploying ROS packages for MuJoCo with https://github.com/code-iai/UnrealApartment/tree/AddHSR
+This repository contains docker images for deploying ROS packages for MuJoCo with https://github.com/K4R-IAI/K4R_Development
 
 ### 0. Prerequisites: https://docs.docker.com/desktop/install/ubuntu/
 
@@ -15,7 +15,7 @@ $ docker compose version
 Docker Compose version v2.15.1
 ```
 
-### 1. If you want to use a package simulator from Unreal Engine, download it [here](https://seafile.zfn.uni-bremen.de/f/a8ac0f55af3c4620bc56/) and unzip it
+### 1. If you want to use a package simulator from Unreal Engine, download it [here](https://seafile.zfn.uni-bremen.de/f/5469b7d144bb45b098da/) and unzip it
 
 ### 2. Clone this repository and go into the checked out folder:
 
