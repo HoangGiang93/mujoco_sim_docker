@@ -12,6 +12,8 @@ RUN apt-get update && apt-get install -y \
   ros-${ROS_DISTRO}-amcl \
   ros-${ROS_DISTRO}-map-server \
   ros-${ROS_DISTRO}-dwa-local-planner \
+  ros-${ROS_DISTRO}-hector-gazebo-plugins \
+  ros-${ROS_DISTRO}-gazebo-ros-control \
   python3-pip \
   python3-dev \
   python3-catkin-tools \
