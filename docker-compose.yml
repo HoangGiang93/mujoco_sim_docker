@@ -69,6 +69,7 @@ services:
       - ROS_MASTER_URI=http://ros-core:11311
       - ROS_IP=${ROS_IP_GISKARD_WS}
     volumes:
+      - ./images/mujoco-ws-image/src:/home/mujoco_ws/src:rw
       - ./images/giskard-ws-image/src:/home/giskard_ws/src:rw
       - ./images/giskard-ws-image/gurobi.lic:/opt/gurobi/gurobi.lic:ro
     entrypoint: /entrypoint.bash
