@@ -47,35 +47,9 @@ services:
     volumes:
       - ./images/mujoco-ws-image/src:/home/mujoco_ws/src:rw
     entrypoint: /entrypoint.bash
-    command: sh -c "sleep 1 && roslaunch tiago_mujoco tiago_bringup.launch"
+    command: sh -c "sleep 1 && roslaunch iai_robots_mujoco iai_donbot_bringup.launch 2> >(grep -v TF_REPEATED_DATA buffer_core)"
     depends_on:
       - ros-core-service
-
-  giskard-ws-service:
-    tty: true
-    image: giskard-ws:${ROS_DISTRO}
-    build:
-      context: ./images/giskard-ws-image/
-      dockerfile: Dockerfile
-      args:
-        ROS_DISTRO: ${ROS_DISTRO}
-    container_name: giskard-container
-    hostname: giskard-ws
-    networks:
-      ros-network:
-        ipv4_address: ${ROS_IP_GISKARD_WS}
-    environment:
-      - HOST_IP=${HOST_IP}
-      - ROS_MASTER_URI=http://ros-core:11311
-      - ROS_IP=${ROS_IP_GISKARD_WS}
-    volumes:
-      - ./images/mujoco-ws-image/src:/home/mujoco_ws/src:rw
-      - ./images/giskard-ws-image/src:/home/giskard_ws/src:rw
-      - ./images/giskard-ws-image/gurobi.lic:/opt/gurobi/gurobi.lic:ro
-    entrypoint: /entrypoint.bash
-    command: sh -c "sleep 1 && roslaunch giskardpy giskardpy_tiago_unreal.launch"
-    depends_on:
-      - mujoco-ws-service
 
   rviz-service:
     # visible output of local simulation as rviz view.
