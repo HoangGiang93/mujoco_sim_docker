@@ -5,9 +5,8 @@ Panels:
     Property Tree Widget:
       Expanded:
         - /TF1/Frames1
-        - /InteractiveMarkers1/Status1
       Splitter Ratio: 0.3760552704334259
-    Tree Height: 853
+    Tree Height: 424
   - Class: rviz/Selection
     Name: Selection
   - Class: rviz/Tool Properties
@@ -25,7 +24,7 @@ Panels:
   - Class: rviz/Time
     Name: Time
     SyncMode: 0
-    SyncSource: LaserScan
+    SyncSource: Camera
 Preferences:
   PromptSaveOnExit: true
 Toolbars:
@@ -61,108 +60,34 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
-        arm_left_1_link:
+        adapter_fwa050_wsg50_frame_in:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        arm_left_2_link:
+        adapter_fwa050_wsg50_frame_out:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        adapter_iso50_kms40_frame_in:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        arm_left_3_link:
+        adapter_iso50_kms40_frame_out:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        adapter_kms40_fwk050_frame_in:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        arm_left_4_link:
+        adapter_kms40_fwk050_frame_out:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
-        arm_left_5_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        arm_left_6_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        arm_left_7_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        arm_left_tool_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        arm_right_1_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        arm_right_2_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        arm_right_3_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        arm_right_4_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        arm_right_5_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        arm_right_6_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        arm_right_7_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        arm_right_tool_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        base_antenna_left_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        base_antenna_right_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        base_cover_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
         base_footprint:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        base_imu_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        base_laser_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -172,220 +97,201 @@ Visualization Manager:
           Show Axes: false
           Show Trail: false
           Value: true
-        base_mic_back_left_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        base_mic_back_right_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        base_mic_front_left_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        base_mic_front_right_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        base_sonar_01_link:
+        camera_holder_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        base_sonar_02_link:
+        camera_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        base_sonar_03_link:
+        charger:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        caster_back_left_1_link:
+        e_stop:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        caster_back_left_2_link:
+        fwk_fwa_050_frame_in:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        caster_back_right_1_link:
+        fwk_fwa_050_frame_out:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        gripper_base_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        caster_back_right_2_link:
+        gripper_finger_left_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        caster_front_left_1_link:
+        gripper_finger_right_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        caster_front_left_2_link:
+        gripper_gripper_left_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        caster_front_right_1_link:
+        gripper_gripper_right_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        caster_front_right_2_link:
+        gripper_tool_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        kms40_frame_in:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        gripper_left_grasping_frame:
+        kms40_frame_out:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-        gripper_left_left_finger_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        gripper_left_link:
+        kms_mounting_plate:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        gripper_left_right_finger_link:
+        laser_reference_back:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        gripper_left_tool_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        gripper_right_grasping_frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        gripper_right_left_finger_link:
+        laser_reference_front:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        gripper_right_link:
+        marco_left_finger_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        gripper_right_right_finger_link:
+        marco_right_finger_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        gripper_right_tool_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        head_1_link:
+        plate:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        head_2_link:
+        refills_tool_frame:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        rs_camera_link:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        switches:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        rgbd_laser_link:
+        ur5_base:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-        suspension_left_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        suspension_right_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        torso_fixed_column_link:
+        ur5_base_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        torso_fixed_link:
+        ur5_ee_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        torso_lift_link:
+        ur5_forearm_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        wheel_left_link:
+        ur5_shoulder_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        wheel_right_link:
+        ur5_tool0:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        ur5_touchpad:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        wrist_left_ft_link:
+        ur5_upper_arm_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        wrist_left_ft_tool_link:
+        ur5_wrist_1_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        wrist_right_ft_link:
+        ur5_wrist_2_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        wrist_right_ft_tool_link:
+        ur5_wrist_3_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        xtion_depth_frame:
+        wheel_back_left:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-        xtion_depth_optical_frame:
+          Value: true
+        wheel_back_right:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-        xtion_link:
+          Value: true
+        wheel_front_left:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-        xtion_optical_frame:
+          Value: true
+        wheel_front_right:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-        xtion_orbbec_aux_joint_frame:
+          Value: true
+        wlan:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-        xtion_rgb_frame:
+          Value: true
+        wrist_collision:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-        xtion_rgb_optical_frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
+          Value: true
       Name: RobotModel
-      Robot Description: tiago/robot_description
+      Robot Description: iai_donbot/robot_description
       TF Prefix: ""
       Update Interval: 0
       Value: true
@@ -413,642 +319,6 @@ Visualization Manager:
         {}
       Queue Size: 100
       Value: true
-    - Alpha: 1
-      Class: rviz/RobotModel
-      Collision Enabled: false
-      Enabled: true
-      Links:
-        All Links Enabled: true
-        Expand Joint Details: false
-        Expand Link Details: false
-        Expand Tree: false
-        Link Tree Style: Links in Alphabetic Order
-        apartment_root:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        armchair:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        bedside_table:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet10:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet10_drawer1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet10_drawer1_handle:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet10_drawer2:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet10_drawer2_handle:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet10_drawer3:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet10_drawer3_handle:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet11:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet11_drawer1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet11_drawer1_handle:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet11_drawer2:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet11_drawer2_handle:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet11_drawer3:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet11_drawer3_handle:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet1_door:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet1_door_handle:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet1_drawer1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet1_drawer1_handle:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet1_drawer2:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet1_drawer2_handle:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet2:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet2_door:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet2_door_handle:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet2_drawer1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet2_drawer2:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet2_drawer3:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet2_drawer4:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet2_drawer5:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet2_drawer6:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet2_shelf:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet3:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet4:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet4_door1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet4_door2:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet4_door2_handle:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet4_shelf1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet4_shelf2:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet5:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet5_drawer1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet5_drawer1_handle:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet5_drawer2:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet5_drawer2_handle:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet5_drawer3:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet5_drawer3_handle:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet6:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet6_drawer1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet6_drawer1_handle:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet6_drawer2:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet6_drawer2_handle:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet6_drawer3:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet6_drawer3_handle:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet8:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet9:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet9_drawer1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet9_drawer1_handle:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet9_drawer2:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet9_drawer2_handle:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet9_drawer3:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        cabinet9_drawer3_handle:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        coffee_table:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        coffee_table_drawer:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        counter_sink:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        counter_sink_stove:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        counter_sink_tap:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        counter_sink_tap_switch:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        counter_wall:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        counter_watertab:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        dishwasher:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        dishwasher_front:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        dishwasher_front_handle:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        dishwasher_tray1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        dishwasher_tray2:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        dishwasher_tray3:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        fridge_base:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        fridge_door1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        fridge_door1_handle:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        fridge_door2:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        fridge_door2_handle:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        fridge_door_tray1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        fridge_door_tray2:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        fridge_drawer1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        fridge_drawer2:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        fridge_drawer3:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        fridge_drawer4:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        fridge_drawer5:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        fridge_egg_tray:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        fridge_shelf1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        fridge_shelf2:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        furnitures_root:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        island_cover1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        island_cover3:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        island_cover4:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        island_cover5:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        kitchen1_base_board:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        kitchen1_root:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        kitchen2_base_board:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        kitchen2_root:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        kitchen_root:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        oven:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        oven_door:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        sink_drawer1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        sink_drawer1_handle:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        sink_drawer2:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        sofa:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        stove:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        wall_coloksu_wall1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        wall_coloksu_wall2:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        wall_coloksu_wall3:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        wall_coloksu_wall4:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        walls:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        wardrobe:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        wardrobe_door_left:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        wardrobe_door_left_handle:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        wardrobe_door_right:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        wardrobe_door_right_handle:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        window4_frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        window4_left:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        window4_left_handle:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        window4_right:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        window4_right_handle:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        windows:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-      Name: RobotModel
-      Robot Description: apartment_description
-      TF Prefix: iai_apartment
-      Update Interval: 0
-      Value: true
-      Visual Enabled: true
     - Alpha: 0.699999988079071
       Class: rviz/Map
       Color Scheme: map
@@ -1156,7 +426,7 @@ Visualization Manager:
       Use rainbow: true
       Value: true
     - Class: rviz/Camera
-      Enabled: false
+      Enabled: true
       Image Rendering: background and overlay
       Image Topic: /unreal_vision/image_color
       Name: Camera
@@ -1164,12 +434,12 @@ Visualization Manager:
       Queue Size: 2
       Transport Hint: raw
       Unreliable: false
-      Value: false
+      Value: true
       Visibility:
-        "": true
         GlobalCostmap: true
         GlobalPath: true
         Grid: true
+        InteractiveMarkers: true
         LaserScan: true
         LocalCostmap: true
         Map: true
@@ -1186,7 +456,7 @@ Visualization Manager:
       Show Axes: false
       Show Descriptions: true
       Show Visual Aids: false
-      Update Topic: /tiago/eef_control/update
+      Update Topic: /iai_donbot/eef_control/update
       Value: true
   Enabled: true
   Global Options:
@@ -1216,7 +486,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 13.726758003234863
+      Distance: 7.554762363433838
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -1224,17 +494,17 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: 8.784229278564453
-        Y: 2.3310775756835938
-        Z: -0.06176115572452545
+        X: 5.414532661437988
+        Y: 5.875341415405273
+        Z: 1.2282143831253052
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.8097965121269226
+      Pitch: 0.9997963905334473
       Target Frame: <Fixed Frame>
-      Yaw: 0.27720510959625244
+      Yaw: 1.527204155921936
     Saved: ~
 Window Geometry:
   Camera:
@@ -1244,7 +514,7 @@ Window Geometry:
   Height: 1136
   Hide Left Dock: false
   Hide Right Dock: true
-  QMainWindow State: 000000ff00000000fd0000000400000000000002630000041afc0200000008fb0000001200530065006c0065006300740069006f006e00000001e10000009b0000005c00fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000b0fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afc0000003b0000041a000000c700fffffffa000000010100000002fb0000000c00430061006d0065007200610000000000ffffffff0000006400fffffffb000000100044006900730070006c0061007900730100000000000002630000015600fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261000000010000015f000003cbfc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a00560069006500770073000000003d000003cb000000a000fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e100000197000000030000073800000060fc0100000002fb0000000800540069006d00650000000000000007380000035c00fffffffb0000000800540069006d00650100000000000004500000000000000000000004cf0000041a00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd0000000400000000000002630000041afc0200000009fb0000001200530065006c0065006300740069006f006e00000001e10000009b0000005c00fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000b0fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073010000003b0000026d000000c700fffffffb0000000c00430061006d00650072006101000002ae000001a70000001600fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261000000010000015f000003cbfc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a00560069006500770073000000003d000003cb000000a000fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e100000197000000030000073800000060fc0100000002fb0000000800540069006d00650000000000000007380000035c00fffffffb0000000800540069006d00650100000000000004500000000000000000000004cf0000041a00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Selection:
     collapsed: false
   Time:
@@ -1254,5 +524,5 @@ Window Geometry:
   Views:
     collapsed: true
   Width: 1848
-  X: 1992
+  X: 72
   Y: 27
