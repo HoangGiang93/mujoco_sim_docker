@@ -80,7 +80,7 @@ sh K4R_Development.sh
 
 The result should look like this:
 
-![Result](https://user-images.githubusercontent.com/64316740/219008496-0ea4cec0-4752-411f-8d3c-de5ca28bdc50.png)
+![Result](https://user-images.githubusercontent.com/64316740/219385870-e029252a-362d-4f6b-a99d-9768b4824dd9.png)
 
 ### 5. Connect to docker container via ROS
 
