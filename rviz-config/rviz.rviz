@@ -6,7 +6,7 @@ Panels:
       Expanded:
         - /TF1/Frames1
       Splitter Ratio: 0.3760552704334259
-    Tree Height: 424
+    Tree Height: 559
   - Class: rviz/Selection
     Name: Selection
   - Class: rviz/Tool Properties
@@ -24,7 +24,7 @@ Panels:
   - Class: rviz/Time
     Name: Time
     SyncMode: 0
-    SyncSource: Camera
+    SyncSource: ""
 Preferences:
   PromptSaveOnExit: true
 Toolbars:
@@ -56,242 +56,563 @@ Visualization Manager:
       Enabled: true
       Links:
         All Links Enabled: true
+        ArmL1_Cla1~ArmL1_Cla1_body:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ArmL4_Sho3~ArmL4_Sho3_body:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ArmL6_Elb2~ArmL6_Elb2_body:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ArmL8_Wri2~ArmL8_Wri2_body:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ArmR1_Cla1~ArmR1_Cla1_body:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ArmR4_Sho3~ArmR4_Sho3_body:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ArmR6_Elb2~ArmR6_Elb2_body:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        ArmR8_Wri2~ArmR8_Wri2_body:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        Armar6:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        CenterArms:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        DepthCamera:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
         Expand Joint Details: false
         Expand Link Details: false
         Expand Tree: false
+        FleaCamerasCenter:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        Hand L Col:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        Hand L Palm:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        Hand R Col:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        Hand R Palm:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        HandL_Base~Hand L Root:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        HandR_Base~Hand R Root:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        Head Base:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        Index L 1 Joint~Index L 1 Body:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        Index L 2 Joint~Index L 2 Body:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        Index L 3 Joint~Index L 3 Body:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        Index R 1 Joint~Index R 1 Body:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        Index R 2 Joint~Index R 2 Body:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        Index R 3 Joint~Index R 3 Body:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        LeftHandFingers:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        LeftHandThumb:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        LidarBack:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
+        LidarFront:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
         Link Tree Style: Links in Alphabetic Order
-        adapter_fwa050_wsg50_frame_in:
+        Middle L 1 Joint~Middle L 1 Body:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        adapter_fwa050_wsg50_frame_out:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        adapter_iso50_kms40_frame_in:
+        Middle L 2 Joint~Middle L 2 Body:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        adapter_iso50_kms40_frame_out:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        adapter_kms40_fwk050_frame_in:
+        Middle L 3 Joint~Middle L 3 Body:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        adapter_kms40_fwk050_frame_out:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        base_footprint:
+        Middle R 1 Joint~Middle R 1 Body:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        base_link:
+        Middle R 2 Joint~Middle R 2 Body:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        camera_holder_link:
+        Middle R 3 Joint~Middle R 3 Body:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        camera_link:
+        Neck_1_Yaw~Neck_1_Yaw_body:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        charger:
+        Neck_2_Pitch~Neck_2_Pitch_body:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        e_stop:
+        Node_ArmL_Cla:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        fwk_fwa_050_frame_in:
+        Node_ArmL_Elb~ArmL5_Elb1~ArmL5_Elb1_body:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        fwk_fwa_050_frame_out:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        gripper_base_link:
+        Node_ArmL_Sho_B~ArmL3_Sho2~ArmL3_Sho2_body:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        gripper_finger_left_link:
+        Node_ArmL_Sho~ArmL2_Sho1~ArmL2_Sho1_body:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        gripper_finger_right_link:
+        Node_ArmL_Wri~ArmL7_Wri1~ArmL7_Wri1_body:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        gripper_gripper_left_link:
+        Node_ArmR_Cla:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        gripper_gripper_right_link:
+        Node_ArmR_Elb~ArmR5_Elb1~ArmR5_Elb1_body:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        gripper_tool_frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        kms40_frame_in:
+        Node_ArmR_Sho_B~ArmR3_Sho2~ArmR3_Sho2_body:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        kms40_frame_out:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        kms_mounting_plate:
+        Node_ArmR_Sho~ArmR2_Sho1~ArmR2_Sho1_body:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        laser_reference_back:
+        Node_ArmR_Wri~ArmR7_Wri1~ArmR7_Wri1_body:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        laser_reference_front:
+        Pinky L 1 Joint~Pinky L 1 Body:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        marco_left_finger_link:
+        Pinky L 2 Joint~Pinky L 2 Body:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        marco_right_finger_link:
+        Pinky L 3 Joint~Pinky L 3 Body:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        plate:
+        Pinky R 1 Joint~Pinky R 1 Body:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        refills_tool_frame:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        rs_camera_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        switches:
+        Pinky R 2 Joint~Pinky R 2 Body:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        ur5_base:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        ur5_base_link:
+        Pinky R 3 Joint~Pinky R 3 Body:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        ur5_ee_link:
+        Platform:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        ur5_forearm_link:
+        RightHandFingers:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        RightHandThumb:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        Ring L 1 Joint~Ring L 1 Body:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        ur5_shoulder_link:
+        Ring L 2 Joint~Ring L 2 Body:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        ur5_tool0:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        ur5_touchpad:
+        Ring L 3 Joint~Ring L 3 Body:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        ur5_upper_arm_link:
+        Ring R 1 Joint~Ring R 1 Body:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        ur5_wrist_1_link:
+        Ring R 2 Joint~Ring R 2 Body:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        ur5_wrist_2_link:
+        Ring R 3 Joint~Ring R 3 Body:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        ur5_wrist_3_link:
+        Roboception:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        Thumb L 1 Joint~Thumb L 1 Body:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        wheel_back_left:
+        Thumb L 2 Joint~Thumb L 2 Body:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        wheel_back_right:
+        Thumb R 1 Joint~Thumb R 1 Body:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        wheel_front_left:
+        Thumb R 2 Joint~Thumb R 2 Body:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        wheel_front_right:
+        TorsoJoint~TorsoJoint_body:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        wlan:
+        VirtualCentralGaze:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
-        wrist_collision:
+        VirtualCentralGazeDepthCamera:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
+        link0_100:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        link0_102:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        link0_104:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        link0_106:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        link0_108:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        link0_11:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        link0_110:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        link0_112:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        link0_115:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        link0_117:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        link0_120:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        link0_124:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        link0_13:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        link0_15:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        link0_17:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        link0_19:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        link0_21:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        link0_23:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        link0_25:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        link0_30:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        link0_32:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        link0_34:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        link0_36:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        link0_38:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        link0_40:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        link0_42:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        link0_44:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        link0_46:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        link0_48:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        link0_50:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        link0_52:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        link0_54:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        link0_56:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        link0_58:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        link0_60:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        link0_63:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        link0_65:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        link0_67:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        link0_69:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        link0_7:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        link0_71:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        link0_73:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        link0_75:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        link0_77:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        link0_82:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        link0_84:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        link0_86:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        link0_88:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        link0_90:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        link0_92:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        link0_94:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        link0_96:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        link0_98:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+        root~Dummy_Platform~X_Platform~Y_Platform~Yaw_Platform~Platform-colmodel:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
       Name: RobotModel
-      Robot Description: iai_donbot/robot_description
+      Robot Description: armar6/robot_description
       TF Prefix: ""
       Update Interval: 0
       Value: true
@@ -425,30 +746,6 @@ Visualization Manager:
       Use Fixed Frame: true
       Use rainbow: true
       Value: true
-    - Class: rviz/Camera
-      Enabled: true
-      Image Rendering: background and overlay
-      Image Topic: /unreal_vision/image_color
-      Name: Camera
-      Overlay Alpha: 0.5
-      Queue Size: 2
-      Transport Hint: raw
-      Unreliable: false
-      Value: true
-      Visibility:
-        GlobalCostmap: true
-        GlobalPath: true
-        Grid: true
-        InteractiveMarkers: true
-        LaserScan: true
-        LocalCostmap: true
-        Map: true
-        Marker: true
-        Path: true
-        RobotModel: true
-        TF: true
-        Value: true
-      Zoom Factor: 1
     - Class: rviz/InteractiveMarkers
       Enable Transparency: true
       Enabled: true
@@ -486,7 +783,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 7.554762363433838
+      Distance: 23.930065155029297
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -494,27 +791,25 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: 5.414532661437988
-        Y: 5.875341415405273
-        Z: 1.2282143831253052
+        X: 8.739651679992676
+        Y: 4.322973251342773
+        Z: 1.4678176641464233
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.9997963905334473
+      Pitch: 1.4997960329055786
       Target Frame: <Fixed Frame>
-      Yaw: 1.527204155921936
+      Yaw: 2.297203779220581
     Saved: ~
 Window Geometry:
-  Camera:
-    collapsed: false
   Displays:
     collapsed: false
-  Height: 1136
+  Height: 842
   Hide Left Dock: false
   Hide Right Dock: true
-  QMainWindow State: 000000ff00000000fd0000000400000000000002630000041afc0200000009fb0000001200530065006c0065006300740069006f006e00000001e10000009b0000005c00fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000b0fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073010000003b0000026d000000c700fffffffb0000000c00430061006d00650072006101000002ae000001a70000001600fffffffb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261000000010000015f000003cbfc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a00560069006500770073000000003d000003cb000000a000fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e100000197000000030000073800000060fc0100000002fb0000000800540069006d00650000000000000007380000035c00fffffffb0000000800540069006d00650100000000000004500000000000000000000004cf0000041a00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd000000040000000000000263000002f4fc0200000009fb0000001200530065006c0065006300740069006f006e00000001e10000009b0000005c00fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000b0fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afb000000100044006900730070006c006100790073010000003b000002f4000000c700fffffffb0000000c00430061006d00650072006100000001ff000001300000000000000000fb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261000000010000015f000003cbfc0200000003fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a00560069006500770073000000003d000003cb000000a000fffffffb0000001200530065006c0065006300740069006f006e010000025a000000b200000000000000000000000200000490000000a9fc0100000001fb0000000a00560069006500770073030000004e00000080000002e100000197000000030000073800000060fc0100000002fb0000000800540069006d00650000000000000007380000035c00fffffffb0000000800540069006d0065010000000000000450000000000000000000000301000002f400000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Selection:
     collapsed: false
   Time:
@@ -523,6 +818,6 @@ Window Geometry:
     collapsed: false
   Views:
     collapsed: true
-  Width: 1848
-  X: 72
-  Y: 27
+  Width: 1386
+  X: 1778
+  Y: 321
