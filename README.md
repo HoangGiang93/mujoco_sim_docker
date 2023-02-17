@@ -15,7 +15,7 @@ $ docker compose version
 Docker Compose version v2.15.1
 ```
 
-### 1. If you want to use a package simulator from Unreal Engine, download it [here](https://seafile.zfn.uni-bremen.de/f/08899ea726ff40cc8a26/) and unzip it
+### 1. If you want to use a package simulator from Unreal Engine, download it [here](https://seafile.zfn.uni-bremen.de/f/14a715cd37e54859939f/) and unzip it
 
 ### 2. Clone this repository and go into the checked out folder:
 
@@ -69,7 +69,7 @@ docker compose up mujoco-ws-service
 #### 4.2. Start the simulation (either by clicking Play in Unreal Engine or from the unziped package)
 
 ```
-sh K4R_Development.sh
+sh Laborraum.sh
 ```
 
 #### 4.3. You can visualize everything with rviz from docker container
