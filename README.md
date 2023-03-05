@@ -1,6 +1,6 @@
 # mujoco_sim_docker
 
-This repository contains docker images for deploying ROS packages for MuJoCo with https://github.com/code-iai/ApartmentLab
+This repository contains docker images for deploying ROS packages for MuJoCo with https://github.com/K4R-IAI/K4R_Development.git
 
 ### 0. Prerequisites: https://docs.docker.com/desktop/install/ubuntu/
 
