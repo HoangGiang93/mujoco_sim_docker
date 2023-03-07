@@ -15,7 +15,7 @@ $ docker compose version
 Docker Compose version v2.15.1
 ```
 
-### 1. If you want to use a package simulator from Unreal Engine, download it [here](https://seafile.zfn.uni-bremen.de/f/97ecc2e40e254999bc26/) and unzip it
+### 1. If you want to use a package simulator from Unreal Engine, download it [here](https://seafile.zfn.uni-bremen.de/f/1495a220141d4fbda943/) and unzip it
 
 ### 2. Clone this repository and go into the checked out folder:
 
