@@ -35,6 +35,8 @@ cd mujoco_sim_docker
 
 The result should look like this:
 
+![BoxDocker](https://user-images.githubusercontent.com/64316740/236650006-1596fbbb-8efd-413c-80a4-df24f4017e96.png)
+
 ##### 4. Spawn the cat (optional) and generate the knowledge graph
 
 ###### 4.1. Get inside a container
@@ -56,8 +58,12 @@ rosrun mujoco_sim spawn_cat.py
 roslaunch mujoco_sim SceneCapture.launch
 ```
 
-The knowledge graph can be found at 
+The generated knowledge graph can be found at 
 `images/mujoco-ws-image/src/mujoco_sim/model/save`
+
+##### 5. Test with reasoner, Protege for example
+
+
 
 ##### 5. Stop docker containers
 
