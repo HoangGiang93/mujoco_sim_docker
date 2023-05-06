@@ -6,20 +6,20 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 # Install prerequisites 
 RUN apt-get update && apt-get install -y \
-  ros-${ROS_DISTRO}-gripper-action-controller \
-  ros-${ROS_DISTRO}-rosbridge-suite \
-  ros-${ROS_DISTRO}-move-base \
-  ros-${ROS_DISTRO}-amcl \
-  ros-${ROS_DISTRO}-map-server \
-  ros-${ROS_DISTRO}-dwa-local-planner \
-  ros-${ROS_DISTRO}-hector-gazebo-plugins \
-  ros-${ROS_DISTRO}-gazebo-ros-control \
   python3-pip \
   python3-dev \
   python3-catkin-tools \
   libglfw3 \
   libglfw3-dev \
-  doxygen
+  doxygen \
+  git \
+  ros-${ROS_DISTRO}-joint-state-controller \
+  ros-${ROS_DISTRO}-joint-state-publisher-gui \
+  ros-${ROS_DISTRO}-effort-controllers
+
+RUN pip3 install pyside6 pyopengl mujoco wheel Cython owlready2 
+RUN cd /home && git clone https://github.com/HoangGiang93/USD.git --branch UsdOntology
+RUN cd /home/USD/build_scripts/ && python3 build_usd.py install --examples --no-imaging --no-materialx
 
 # Copy pacakges
 COPY src /home/mujoco_ws/src

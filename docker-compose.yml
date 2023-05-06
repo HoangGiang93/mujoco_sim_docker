@@ -8,28 +8,9 @@ networks:
         - subnet: ${SUBNET}
 
 services:
-  ros-core-service:
-    tty: true
-    image: ros-core:${ROS_DISTRO}
-    build:
-      context: ./images/ros-core-image/
-      dockerfile: Dockerfile
-      args:
-        ROS_DISTRO: ${ROS_DISTRO}
-    container_name: ros-core-container
-    hostname: ros-core
-    networks:
-      ros-network:
-        ipv4_address: ${ROS_IP_CORE}
-    environment:
-      - ROS_MASTER_URI=http://${ROS_IP_CORE}:11311
-      - ROS_IP=${ROS_IP_CORE}
-    entrypoint: /entrypoint.bash
-    command: roscore
-
   mujoco-ws-service:
     tty: true
-    image: mujoco-ws:${ROS_DISTRO}
+    image: hoanggiang/mujoco-usd:latest
     build:
       context: ./images/mujoco-ws-image/
       dockerfile: Dockerfile
@@ -39,73 +20,17 @@ services:
     hostname: mujoco-ws
     networks:
       ros-network:
-        ipv4_address: ${ROS_IP_MUJOCO_WS}
+        ipv4_address: ${ROS_IP_CORE}
     environment:
-      - HOST_IP=${HOST_IP}
-      - ROS_MASTER_URI=http://ros-core:11311
-      - ROS_IP=${ROS_IP_MUJOCO_WS}
-    volumes:
-      - ./images/mujoco-ws-image/src:/home/mujoco_ws/src:rw
-    entrypoint: /entrypoint.bash
-    command: sh -c "sleep 1 && roslaunch tiago_mujoco tiago_dual_bringup.launch"
-    depends_on:
-      - ros-core-service
-
-  giskard-ws-service:
-    tty: true
-    image: giskard-ws:${ROS_DISTRO}
-    build:
-      context: ./images/giskard-ws-image/
-      dockerfile: Dockerfile
-      args:
-        ROS_DISTRO: ${ROS_DISTRO}
-    container_name: giskard-container
-    hostname: giskard-ws
-    networks:
-      ros-network:
-        ipv4_address: ${ROS_IP_GISKARD_WS}
-    environment:
-      - HOST_IP=${HOST_IP}
-      - ROS_MASTER_URI=http://ros-core:11311
-      - ROS_IP=${ROS_IP_GISKARD_WS}
-    volumes:
-      - ./images/mujoco-ws-image/src:/home/mujoco_ws/src:rw
-      - ./images/giskard-ws-image/src:/home/giskard_ws/src:rw
-      - ./images/giskard-ws-image/gurobi.lic:/opt/gurobi/gurobi.lic:ro
-    entrypoint: /entrypoint.bash
-    command: sh -c "sleep 1 && roslaunch giskardpy giskardpy_tiago_unreal.launch"
-    depends_on:
-      - mujoco-ws-service
-
-  rviz-service:
-    # visible output of local simulation as rviz view.
-    tty: true
-    image: rviz:${ROS_DISTRO}
-    build:
-      context: ./images/rviz-image/
-      dockerfile: Dockerfile
-      args:
-        ROS_DISTRO: ${ROS_DISTRO}
-    container_name: rviz-container
-    hostname: rviz
-    networks:
-      ros-network:
-        ipv4_address: ${ROS_IP_RVIZ}
-    environment:
-      - ROS_MASTER_URI=http://ros-core:11311
       - DISPLAY
       - QT_X11_NO_MITSHM=1 #fix some QT bugs
+      - HOST_IP=${HOST_IP}
+      - ROS_MASTER_URI=http://${ROS_IP_CORE}:11311
+      - ROS_IP=${ROS_IP_CORE}
+      - PXR_PLUGINPATH_NAME=/home/USD/build_scripts/install/share/usd/examples/plugin/usdOntology/resources/
+      - PYTHONPATH=/home/USD/build_scripts/install/lib/python
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix:rw
-      - ./rviz-config:/rviz-config:z
+      - ./images/mujoco-ws-image/src:/home/mujoco_ws/src:rw
     entrypoint: /entrypoint.bash
-    command:
-      [
-        "rosrun",
-        "rviz",
-        "rviz",
-        "--display-config",
-        "/rviz-config/rviz.rviz"
-      ]
-    depends_on:
-      - mujoco-ws-service
+    command: sh -c "roslaunch mujoco_sim BoxScenario.launch"

@@ -3,14 +3,6 @@
     local-name: mujoco_msgs
     uri: git@github.com:HoangGiang93/mujoco_msgs.git
 - git:
-    local-name: mujoco_robots
-    uri: git@github.com:HoangGiang93/mujoco_robots.git
-- git:
     local-name: mujoco_sim
     uri: git@github.com:HoangGiang93/mujoco_sim.git
-- git:
-    local-name: mujoco_world
-    uri: git@github.com:HoangGiang93/mujoco_world.git
-- git:
-    local-name: unreal_vision_bridge
-    uri: git@github.com:code-iai/unreal_vision_bridge.git
+    version: USD_KG
