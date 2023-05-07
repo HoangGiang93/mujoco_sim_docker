@@ -55,7 +55,7 @@ rosrun mujoco_sim spawn_cat.py
 ###### 4.3 Generate the knowledge graph
 
 ```
-roslaunch mujoco_sim SceneCapture.launch
+roslaunch mujoco_sim USD_to_KG.launch
 ```
 
 The generated knowledge graph and all relevant data can be found at 
