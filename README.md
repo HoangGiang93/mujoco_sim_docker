@@ -24,7 +24,7 @@ cd mujoco_sim_docker
 ##### 2. Install nvidia-docker2 to enable GPU access with Compose (sudo required)
 
 ```
-./setup_rviz.bash
+./setup_nvidia_docker.bash
 ```
 
 ##### 3. Using the docker compose
