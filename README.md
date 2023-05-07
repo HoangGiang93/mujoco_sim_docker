@@ -58,18 +58,18 @@ rosrun mujoco_sim spawn_cat.py
 roslaunch mujoco_sim SceneCapture.launch
 ```
 
-The generated knowledge graph can be found at 
+The generated knowledge graph and all relevant data can be found at 
 `images/mujoco-ws-image/src/mujoco_sim/model/save`
 
 ##### 5. Test with reasoner, Protege for example
 
+![image](https://user-images.githubusercontent.com/64316740/236653496-71307154-4c00-4da6-93ff-73270b9430a5.png)
 
+##### 6. Stop docker containers
 
-##### 5. Stop docker containers
+###### 6.1. Cancel every terminals with Ctrl + C
 
-###### 5.1. Cancel every terminals with Ctrl + C
-
-###### 5.2. Remove docker containers and network
+###### 6.2. Remove docker containers and network
 
 ```
 docker compose down
