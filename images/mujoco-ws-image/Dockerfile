@@ -1,5 +1,5 @@
 ARG ROS_DISTRO
-FROM ros-core:${ROS_DISTRO}
+FROM ros:${ROS_DISTRO}-robot
 
 # Zero interaction while installing or upgrading the system via apt, see https://bobcares.com/blog/debian_frontendnoninteractive-docker/
 ARG DEBIAN_FRONTEND=noninteractive 
@@ -13,13 +13,14 @@ RUN apt-get update && apt-get install -y \
   libglfw3-dev \
   doxygen \
   git \
+  libglfw3-dev libgl1-mesa-dev libglu1-mesa-dev libxt-dev \
   ros-${ROS_DISTRO}-joint-state-controller \
   ros-${ROS_DISTRO}-joint-state-publisher-gui \
   ros-${ROS_DISTRO}-effort-controllers
 
 RUN pip3 install pyside6 pyopengl mujoco wheel Cython owlready2 
 RUN cd /home && git clone https://github.com/HoangGiang93/USD.git --branch UsdOntology
-RUN cd /home/USD/build_scripts/ && python3 build_usd.py install --examples --no-imaging --no-materialx
+RUN cd /home/USD/build_scripts/ && python3 build_usd.py install
 
 # Copy pacakges
 COPY src /home/mujoco_ws/src
