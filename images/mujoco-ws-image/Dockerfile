@@ -31,7 +31,8 @@ RUN apt-get install -y \
   ros-${ROS_DISTRO}-joint-state-controller \
   ros-${ROS_DISTRO}-joint-state-publisher-gui \
   ros-${ROS_DISTRO}-effort-controllers \
-  ros-${ROS_DISTRO}-gripper-action-controller
+  ros-${ROS_DISTRO}-gripper-action-controller \
+  ros-${ROS_DISTRO}-rviz
   
 RUN apt-get install -y \
   ros-${ROS_DISTRO}-pr2-description
