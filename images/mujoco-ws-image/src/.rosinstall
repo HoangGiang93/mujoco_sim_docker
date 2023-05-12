@@ -5,4 +5,8 @@
 - git:
     local-name: mujoco_sim
     uri: git@github.com:HoangGiang93/mujoco_sim.git
-    version: USD_KG
+    version: main
+- git:
+    local-name: mujoco_robots
+    uri: git@github.com:HoangGiang93/mujoco_robots.git
+    version: Empty

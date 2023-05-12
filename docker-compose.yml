@@ -10,7 +10,7 @@ networks:
 services:
   mujoco-ws-service:
     tty: true
-    image: hoanggiang/mujoco-usd:latest
+    image: mujoco-ws:seville
     build:
       context: ./images/mujoco-ws-image/
       dockerfile: Dockerfile
@@ -33,4 +33,4 @@ services:
       - /tmp/.X11-unix:/tmp/.X11-unix:rw
       - ./images/mujoco-ws-image/src:/home/mujoco_ws/src:rw
     entrypoint: /entrypoint.bash
-    command: sh -c "roslaunch mujoco_sim box_scenario.launch"
+    command: sh -c "roslaunch mujoco_sim mujoco_sim.launch"
