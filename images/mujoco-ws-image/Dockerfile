@@ -13,18 +13,28 @@ RUN apt-get update && apt-get install -y \
   libglfw3-dev \
   doxygen \
   git \
-  libglfw3-dev libgl1-mesa-dev libglu1-mesa-dev libxt-dev \
-  ros-${ROS_DISTRO}-joint-state-controller \
-  ros-${ROS_DISTRO}-joint-state-publisher-gui \
-  ros-${ROS_DISTRO}-effort-controllers
+  libglfw3-dev libgl1-mesa-dev libglu1-mesa-dev libxt-dev 
 
 RUN pip3 install pyside6 pyopengl mujoco wheel Cython owlready2 
 RUN cd /home && git clone https://github.com/HoangGiang93/USD.git --branch UsdOntology
 RUN cd /home/USD/build_scripts/ && python3 build_usd.py install
 
-# Copy pacakges
+# Copy packages
 COPY src /home/mujoco_ws/src
 WORKDIR /home/mujoco_ws
+
+# Install ros pacakges
+RUN apt-get install -y \
+  ros-${ROS_DISTRO}-joint-trajectory-controller \
+  ros-${ROS_DISTRO}-rqt-robot-steering \
+  ros-${ROS_DISTRO}-rqt-joint-trajectory-controller \
+  ros-${ROS_DISTRO}-joint-state-controller \
+  ros-${ROS_DISTRO}-joint-state-publisher-gui \
+  ros-${ROS_DISTRO}-effort-controllers \
+  ros-${ROS_DISTRO}-gripper-action-controller
+  
+RUN apt-get install -y \
+  ros-${ROS_DISTRO}-pr2-description
 
 # Build catkin workspace
 RUN rosdep install --from-paths src --ignore-src -r -y \
