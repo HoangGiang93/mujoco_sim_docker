@@ -10,7 +10,7 @@ networks:
 services:
   mujoco-ws-service:
     tty: true
-    image: mujoco-ws:seville
+    image: hoanggiang/mujoco-workshop:seville
     build:
       context: ./images/mujoco-ws-image/
       dockerfile: Dockerfile
